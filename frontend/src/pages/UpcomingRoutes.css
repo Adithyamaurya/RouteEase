@@ -1,0 +1,268 @@
+.upcoming-routes-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.routes-hero {
+  background: linear-gradient(135deg, #d84e55 0%, #c73e45 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.routes-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.routes-hero p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Filter Section */
+.filter-section {
+  padding: 40px 0 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 12px 30px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: #d84e55;
+  color: #d84e55;
+}
+
+.filter-btn.active {
+  background-color: #d84e55;
+  border-color: #d84e55;
+  color: white;
+}
+
+/* Routes Section */
+.routes-section {
+  padding: 40px 0 80px;
+}
+
+.routes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: start;
+  grid-auto-rows: 1fr;
+}
+
+.route-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.route-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(216, 78, 85, 0.2);
+}
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.route-cities {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.route-from,
+.route-to {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.route-arrow {
+  color: #d84e55;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.route-status-badge {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.route-details {
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 8px 0;
+}
+
+.detail-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.detail-value.price {
+  color: #d84e55;
+  font-size: 18px;
+}
+
+.route-features {
+  margin-bottom: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.route-features h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.feature-tag {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.route-actions {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: auto;
+}
+
+.route-actions .btn {
+  flex: 1;
+}
+
+/* Info Section */
+.info-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.info-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.subscribe-input:focus {
+  border-color: #d84e55;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .routes-hero h1 {
+    font-size: 32px;
+  }
+
+  .routes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .route-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .route-actions {
+    flex-direction: column;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-input {
+    width: 100%;
+  }
+}
+

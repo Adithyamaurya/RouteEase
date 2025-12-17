@@ -1,0 +1,162 @@
+.my-bookings-page {
+  flex: 1;
+  padding: 40px 0;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-card {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-id {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+
+.status {
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-confirmed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.booking-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.booking-info {
+  flex: 1;
+}
+
+.route-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.route-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-section .time {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.route-section .location {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.route-section .date {
+  font-size: 14px;
+  color: #999;
+}
+
+.route-arrow {
+  font-size: 28px;
+  color: #d84e55;
+  font-weight: bold;
+}
+
+.booking-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.detail-row span:first-child {
+  color: #666;
+}
+
+.detail-row span:last-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.seat-numbers {
+  color: #d84e55;
+}
+
+.amount {
+  color: #d84e55;
+  font-size: 18px;
+}
+
+.booking-actions {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    flex-direction: column;
+  }
+
+  .booking-actions {
+    width: 100%;
+  }
+
+  .booking-actions .btn {
+    width: 100%;
+  }
+
+  .route-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .route-arrow {
+    transform: rotate(90deg);
+  }
+}
+
